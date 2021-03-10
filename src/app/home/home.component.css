@@ -1,0 +1,10 @@
+.linha{
+    width: 450px;
+
+}
+
+.linha button {
+    display: inline-block;
+    margin: 5px;
+
+}
