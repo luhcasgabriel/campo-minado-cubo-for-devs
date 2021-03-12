@@ -1,12 +1,21 @@
-<p>{{alunos}}</p>
 
-
-<div>
-    <div *ngFor="let colunas of linhas" class="linha">
-        <button (click)="bombaOubandeira(item)" *ngFor="let item of colunas">Clique aqui</button>
-
+<div class="minefield-game">
+    <div class="header">
+        <div class="content">
+            <div class="logo">MineField</div>
+        </div>
     </div>
+    <div class="body">
+        <div class="content">
+            <div class="title">{{alunos}}</div>
+            <div class="game">
+                <div *ngFor="let colunas of linhas" class="linha">
+                    <button (click)="bombaOubandeira(item)" *ngFor="let item of colunas" class={{item.id}}></button>
+                </div>
+            </div>
+            <div class="result">{{result}}</div>
+        </div>
+    </div>
+    <div class="footer"></div>
 </div>
 
-
-<div>Voce tem {{pontos}} pontos</div>
